@@ -43,7 +43,7 @@ function Filter(props) {
           <label className="filter-label">Status</label>
           <br />
           <select className="filter-select" name="character-status" id="character-status">
-            <option value="" selected>All</option>
+            <option value="" defaultValue>All</option>
             <option value="alive">Alive</option>
             <option value="dead">Dead</option>
             <option value="unknown">Unknown</option>
@@ -53,7 +53,7 @@ function Filter(props) {
           <label className="filter-label">Gender</label>
           <br />
           <select className="filter-select" name="character-gender" id="character-gender">
-            <option value="" selected>All</option>
+            <option value="" defaultValue>All</option>
             <option value="male">Male</option>
             <option value="female">Female</option>
             <option value="genderless">genderless</option>

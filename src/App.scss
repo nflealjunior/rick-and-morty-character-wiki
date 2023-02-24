@@ -23,24 +23,4 @@
   -webkit-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
-
-  .pagination{
-    display: flex;
-    justify-content: center;
-    padding-right: 0px;
-    padding-bottom: 50px;
-
-    .MuiPagination-ul{
-      background-color: rgba(255,255,255,0.7);
-      padding: 7px 30px;
-      border-radius: 30px;
-    }
-
-    .Mui-selected{
-      background-color: #090;
-    }
-    .Mui-selected:hover{
-      background-color: #0A0;
-    }
-  }
 }

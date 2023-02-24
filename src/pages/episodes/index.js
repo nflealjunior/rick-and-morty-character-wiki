@@ -5,7 +5,7 @@ function Episodes() {
 
   return (
     <div className="episodes">
-      
+      EPISODES
     </div>
   );
 }

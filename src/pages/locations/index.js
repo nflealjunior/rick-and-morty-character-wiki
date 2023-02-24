@@ -5,7 +5,7 @@ function Locations() {
 
   return (
     <div className="locations">
-      
+      LOCATIONS
     </div>
   );
 }
