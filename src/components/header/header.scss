@@ -1,0 +1,17 @@
+.header-component{
+  padding-top: 20px;
+  padding-bottom: 20px;
+  display: grid;
+  justify-content: center;
+
+  .logo{
+    width: 500px;
+  }
+
+  .title{
+    margin-top: -15px;
+    font-size: 25px;
+    text-align: center;
+    color: #EEE;
+  }
+}
