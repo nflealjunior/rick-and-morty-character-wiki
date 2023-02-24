@@ -1,0 +1,33 @@
+.no-results-component{
+  padding-top: 25px;
+  padding-bottom: 50px;
+  .image-row{
+    justify-content: center;
+  }
+  .no-results-image{
+    padding-top: 10px;
+    padding-bottom: 10px;
+    width: 125px;
+  }
+  .message{
+    padding-top: 10px;
+    padding-bottom: 20px;
+    margin-bottom: 0px;
+    text-align: center;
+    font-size: 20px;
+    color: #EEE;
+  }
+
+  .go-back-button-row{
+    justify-content: center;
+    .go-back-button{
+      width: fit-content;
+      padding: 10px 20px;
+      border: 3px solid #00B5CC;
+      background-color: rgba(0,181,204,0.8);
+      color: #EEE;
+      border-radius: 10px;
+      margin-bottom: 50px;
+    }
+  }
+}

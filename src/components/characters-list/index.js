@@ -1,14 +1,13 @@
 import React from 'react';
-import './characters.scss';
+import './characters-list.scss';
 
-function Characters(props) {
+function CharactersList(props) {
   return (
     <div className="characters-component">
-      {props.characters && console.log(props.characters.results)}
       <div className="character-row row">
         {props.characters && props.characters.results.map(function (character) {
           return (
-            <div className="character-col col-xs-6 col-sm-4 col-lg-3">
+            <div key={character.id} className="character-col col-xs-6 col-sm-4 col-lg-3">
               <div className={'character character-' + character.status.toLowerCase()}>
                 <div className={'name-tag name-tag-' + character.status.toLowerCase()}>
                   {character.name.toUpperCase()}
@@ -35,4 +34,4 @@ function Characters(props) {
   );
 }
 
-export default Characters;
+export default CharactersList;

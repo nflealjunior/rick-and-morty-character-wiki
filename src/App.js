@@ -1,10 +1,13 @@
-import React, {useEffect,useState} from "react";
-import Characters from './components/characters'
+import React, { useEffect, useState } from "react";
+import CharactersList from './components/characters-list'
 import Header from './components/header';
 import Filter from './components/filter';
+import NoResults from "./components/no-results";
 import '../node_modules/bootstrap/dist/css/bootstrap.css';
 import './App.scss';
 import { Pagination } from '@mui/material';
+import { BrowserRouter as Router, Switch, Route, Link } from 'react-router-dom';
+
 
 export default function App() {
   const [characterData, setCharacterData] = useState(null);
@@ -18,7 +21,24 @@ export default function App() {
     setCurrentPage(Number.parseInt(e.target.innerHTML.split('<')[0]));
   }
 
-  function clearAllFilters (){
+  function handleFilters () {
+    setCurrentPage(1);
+    setNameFilter(document.getElementById('character-name').value);
+    setStatusFilter(document.getElementById('character-status').value);
+    setSpeciesFilter(document.getElementById('character-species').value);
+    setGenderFilter(document.getElementById('character-gender').value);
+  }
+
+  function clearAllFilters () {
+    console.log("ENTROU NO CLEAR");
+    var name = document.getElementById('character-name');
+    name.value = "";
+    var status = document.getElementById('character-status');
+    status.value = "";
+    var specie = document.getElementById('character-species');
+    specie.value = "";
+    var gender = document.getElementById('character-gender');
+    gender.value = "";
     setNameFilter("");
     setStatusFilter("");
     setSpeciesFilter("");
@@ -38,15 +58,16 @@ export default function App() {
         setCharacterData(data);
       });
     });
-  }, [currentPage]);
+  }, [ currentPage, nameFilter, statusFilter, speciesFilter, genderFilter ]);
   
   return (
     <div className="rick-and-morty-character-wiki">
-        {characterData &&
-          <div className="content container">
-            <Header/>
-            <Filter />
-            <Characters characters={characterData} />
+      <div className="content container">
+        <Header/>
+        <Filter handleFilters={handleFilters} clearAllFilters={clearAllFilters}/>
+        {characterData && characterData.results ? (
+          <>
+            <CharactersList characters={characterData} />
             <Pagination 
               className="container pagination" 
               count={characterData.info.pages} 
@@ -59,8 +80,26 @@ export default function App() {
               page={currentPage}
               onChange={handlePage}
             />
-          </div>
-        }
+          </>
+        ) : (
+          <>
+            <NoResults clearAllFilters={clearAllFilters}/>
+            <Pagination 
+              className="container pagination" 
+              count={1} 
+              size="large"
+              color="primary"
+              hidePrevButton 
+              hideNextButton
+              siblingCount={2} 
+              boundaryCount={1}
+              page={1}
+              disabled
+            />
+          </>
+        )}
+        
+      </div>
     </div> 
   );
 }

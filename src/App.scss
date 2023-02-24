@@ -1,11 +1,28 @@
+.character-wiki{
+  height: 100%;
+  background-image: linear-gradient(
+      rgba(30, 30, 30, 0.5),
+      rgba(30, 30, 30, 0.5)
+    ), url("assets/images/stars-background.jpg");
+  background-attachment: fixed;
+  -moz-background-size: cover;
+  -webkit-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  overflow-y: overlay;
+}
+
 .rick-and-morty-character-wiki{
   font-family: cursive;
   background-image: linear-gradient(
       rgba(30, 30, 30, 0.5),
       rgba(30, 30, 30, 0.5)
     ), url("assets/images/stars-background.jpg");
-  background-size: cover;
   background-attachment: fixed;
+  -moz-background-size: cover;
+  -webkit-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
 
   .pagination{
     display: flex;
