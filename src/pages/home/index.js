@@ -19,7 +19,7 @@ function Home() {
               <img className="list-option-img" src={ListOptionCharacter} alt="list-option-characters" />
             </div>
             <div className="information">
-              Complete list of characters
+              Complete list of characters &#8599;
             </div>
           </div>
         </Link>
@@ -32,7 +32,7 @@ function Home() {
               <img className="list-option-img" src={ListOptionLocations} alt="list-options-locations" />
             </div>
             <div className="information">
-              Complete list of locations
+              Complete list of locations &#8599;
             </div>
           </div>
         </Link>
@@ -45,7 +45,7 @@ function Home() {
               <img className="list-option-img" src={ListOptionEpisodes} alt="list-options-episodes" />
             </div>
             <div className="information">
-              Complete list of episodes
+              Complete list of episodes &#8599;
             </div>
           </div>
         </Link>

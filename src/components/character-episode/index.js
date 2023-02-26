@@ -1,4 +1,5 @@
 import React, { useEffect, useState} from 'react';
+import { Link } from 'react-router-dom';
 import './character-episode.scss';
 
 function CharacterEpisodes(props) {
@@ -15,16 +16,19 @@ function CharacterEpisodes(props) {
 
   return (
     characterEpisodeData && (
-      <a className="character-episode" href={characterEpisodeData.url}>
-        <div key={characterEpisodeData.id} className="episode">
+      <Link to={`/episode/${characterEpisodeData.id}`} className="character-episode" href={characterEpisodeData.url}>
+        <div className="episode">
           <div className="character-episode-title">
             {characterEpisodeData.episode + ": " + characterEpisodeData.name}
+          </div>
+          <div className="more-info">
+            Click to see more information &#8599;
           </div>
           <div className="character-episode-air-date">
             {characterEpisodeData.air_date}
           </div>
         </div>
-      </a>
+      </Link>
     )
   );
 }

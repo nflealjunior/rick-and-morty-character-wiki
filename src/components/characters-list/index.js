@@ -22,9 +22,7 @@ function CharactersList(props) {
                 <div className="information">
                   <p>Species: {character.species}</p>
                   <p>Gender: {character.gender}</p>
-                </div>
-                <div hidden className={'status-bar status-bar-' + character.status.toLowerCase()}>
-                  {character.status.toUpperCase()}
+                  <p className="more-info">Click to see more information &#8599;</p>
                 </div>
               </div>
             </Link>

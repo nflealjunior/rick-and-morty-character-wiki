@@ -1,11 +1,13 @@
 import React from "react";
 import Header from './components/header';
+import Footer from './components/footer';
 import Home from "./pages/home";
 import Characters from "./pages/characters";
 import Character from "./pages/character";
 import Locations from "./pages/locations";
 import Location from "./pages/location";
 import Episodes from "./pages/episodes";
+import Episode from "./pages/episode";
 import '../node_modules/bootstrap/dist/css/bootstrap.css';
 import './App.scss';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
@@ -24,8 +26,10 @@ export default function App() {
             <Route path="/locations" element={<Locations />}></Route>
             <Route path="/location/:id" element={<Location />}></Route>
             <Route path="/episodes" element={<Episodes />}></Route>
+            <Route path="/episode/:id" element={<Episode />}></Route>
           </Routes>
         </Router>
+        <Footer/>
       </div>
     </div> 
   );

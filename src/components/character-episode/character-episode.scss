@@ -1,15 +1,29 @@
 .character-episode{
+  text-decoration: none;
   .episode{
     padding: 10px 15px;
     margin-bottom: 15px;
     border-radius: 10px;
     background-color: rgba(0, 0, 0, 0.4);
-    height: 85px;
+    height: 80px;
     position: relative;
     
     .character-episode-title{
-      line-height: 20px;
+      line-height: 22px;
       font-size: 17px;
+      text-decoration: none;
+      white-space: nowrap;
+      overflow: hidden;
+      text-overflow: ellipsis;
+    }
+    
+    .more-info{
+      position: absolute;
+      text-decoration: underline;
+      text-underline-position: under;
+      font-size: 11px;
+      bottom: 10px;
+      left: 15px;
     }
 
     .character-episode-air-date{

@@ -17,6 +17,9 @@ function LocationsList(props) {
                   <p>Type: {location.type}</p>
                   <p>Dimension: {location.dimension}</p>
                 </div>
+                <p className="more-info">
+                  Click to see more information &#8599;
+                </p>
               </div>
             </Link>
           );

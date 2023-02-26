@@ -30,6 +30,7 @@ function LocationCharacters(props) {
           <div className="location-resident-name">
             {locationCharacterData.name}
           </div>
+          <p className="more-info">Click to see more information &#8599;</p>
         </div>
       </Link>
     )

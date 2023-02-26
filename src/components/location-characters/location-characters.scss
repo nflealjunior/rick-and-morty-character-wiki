@@ -13,7 +13,11 @@
         border: 5px solid #666;
         margin-top: 5px;
         border-radius: 10px;
-        width: 100%;
+        background-image: url("../../assets/images/character-placeholder.jpg");
+        background-repeat: no-repeat;
+        background-size: contain;
+        width: 261px;
+        height: 261px;
       }
 
       .resident-status-tag{
@@ -48,13 +52,26 @@
     }
 
     .location-resident-name{
-      padding-top: 20px;
+      padding-top: 15px;
       padding-bottom: 10px;
       line-height: 20px;
       font-size: 20px;
       white-space: nowrap;
       overflow: hidden;
       text-overflow: ellipsis;
+      text-decoration: underline;
+      text-underline-position: under;
+      text-decoration: none;
+      text-align: center;
+    }
+
+    .more-info{
+      text-align: center;
+      color: #EEE;
+      padding-top: 0px;
+      text-decoration: underline;
+      text-underline-position: under;
+      font-size: 12px;
     }
   }
 }

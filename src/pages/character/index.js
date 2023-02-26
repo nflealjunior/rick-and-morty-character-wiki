@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import { useParams } from 'react-router-dom';
+import { useParams, Link } from 'react-router-dom';
 import  CharacterEpisodes from "../../components/character-episode";
 import './character.scss';
 
@@ -36,15 +36,21 @@ function Character() {
                   Type: {singleCharacterData.type}
                 </p>
               }
+              {console.log(Number.parseInt(singleCharacterData.origin.url.split('/')[5]))}
               {(singleCharacterData.origin.name !== "unknown") && 
-                <p>
-                  <a href={singleCharacterData.origin.url}>Origin: {singleCharacterData.origin.name}</a>
-                </p>
+                <Link to={`/location/${Number.parseInt(singleCharacterData.origin.url.split('/')[5])}`}>
+                  <p className="location-link">
+                    Origin: {singleCharacterData.origin.name} &#8599;
+                  </p>
+                </Link>
               }
+              {console.log(Number.parseInt(singleCharacterData.origin.url.split('/')[5]))}
               {(singleCharacterData.location.name !== "unknown") && 
-                <p>
-                  <a href={singleCharacterData.location.url}>Last known location: {singleCharacterData.location.name}</a>
-                </p>
+                <Link to={`/location/${Number.parseInt(singleCharacterData.location.url.split('/')[5])}`}>
+                  <p className="location-link">
+                    Last known location: {singleCharacterData.location.name} &#8599;
+                  </p>
+                </Link>
               }
             </div>
           </div>

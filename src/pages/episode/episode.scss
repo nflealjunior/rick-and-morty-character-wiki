@@ -1,7 +1,7 @@
-.location{
+.episode{
 
-  .location-data{
-    padding: 20px 30px 20px 30px;
+  .episode-data{
+    padding: 30px;
     margin-bottom: 15px;
     background-color: rgba(100, 100, 100, 0.7);
     background-size: contain;
@@ -13,10 +13,10 @@
       color: #EEE;
     }
 
-    .location-information{
+    .episode-information{
       padding-bottom: 0px;
 
-      .location-name{
+      .episode-name{
         color: #EEE;
         font-size: 35px;
         padding-bottom: 0px;
@@ -25,23 +25,22 @@
       p {
         color: #EEE;
         margin-bottom: 0px;
-        padding-bottom: 5px;
         font-size: 18px;
       }
     }
 
-    .location-character-section-title{
+    .episode-character-section-title{
       color: #EEE;
       font-size: 18px;
       padding-bottom: 15px;
     }
   }
 
-  .character-data-row{
-    padding-bottom: 15px;
+  .episode-data-row{
+    padding-bottom: 5px;
   }
 
-  .location-characters-section{
+  .episode-characters-section{
     border-radius: 10px;
   }
 }

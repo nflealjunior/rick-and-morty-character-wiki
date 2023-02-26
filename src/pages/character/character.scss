@@ -1,14 +1,15 @@
 .character{
 
   .character-data{
-    padding: 30px;
+    padding: 30px 30px 20px 30px;
+    margin-bottom: 15px;
     background-color: rgba(100, 100, 100, 0.7);
     background-size: contain;
     border-radius: 15px;
     width: 100%;
 
     a{
-      text-decoration: none;
+      text-underline-position: under;
       color: #EEE;
     }
     .character-image-col{
