@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import { useParams } from 'react-router-dom';
 import  LocationCharacters from "../../components/location-characters";
+import GoBackButton from "../../components/goBackButton";
 import './episode.scss';
 
 function Episode() {
@@ -17,6 +18,7 @@ function Episode() {
 
   return (
     <div className="episode">
+      <GoBackButton />
       {singleEpisodeData && 
         <div className="episode-data"> 
           {console.log(singleEpisodeData)}

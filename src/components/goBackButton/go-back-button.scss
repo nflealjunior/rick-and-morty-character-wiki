@@ -1,0 +1,18 @@
+.go-back-button{
+  .go-backbutton-section{
+    text-align: center;
+    button{
+      background: none;
+      border: none;
+      outline: none;
+      color: #EEE;
+      background-color: rgba(100, 100, 100, 0.7);
+      border-radius: 10px;
+      width: fit-content;
+      font-size: 17px;
+      text-align: center;
+      margin-bottom: 40px;
+      padding: 5px 15px;
+    }
+  }
+}

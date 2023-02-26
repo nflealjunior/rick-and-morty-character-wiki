@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import { useParams } from 'react-router-dom';
 import  LocationCharacters from "../../components/location-characters";
+import GoBackButton from "../../components/goBackButton";
 import './location.scss';
 
 function Location() {
@@ -17,6 +18,7 @@ function Location() {
 
   return (
     <div className="location">
+      <GoBackButton />
       {singleLocationData && 
         <div className="location-data"> 
           {console.log(singleLocationData)}

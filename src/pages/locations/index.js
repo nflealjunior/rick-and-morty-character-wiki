@@ -1,6 +1,7 @@
 import React, { useEffect, useState} from 'react';
 import LocationsList from "../../components/locations-list";
 import NoResults from "../../components/no-results";
+import GoBackButton from "../../components/goBackButton";
 import { Pagination } from "@mui/material";
 import './locations.scss';
 
@@ -24,6 +25,7 @@ function Locations() {
 
   return (
     <div className="locations">
+      <GoBackButton />
       {locationsData && locationsData.results ? (
         <>
           <LocationsList locations={locationsData} />

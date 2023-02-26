@@ -1,6 +1,7 @@
 import React, { useEffect, useState} from 'react';
 import EpisodesList from "../../components/episodes-list";
 import NoResults from "../../components/no-results";
+import GoBackButton from "../../components/goBackButton";
 import { Pagination } from "@mui/material";
 import './episodes.scss';
 
@@ -23,6 +24,7 @@ function Episodes() {
 
   return (
     <div className="episodes">
+      <GoBackButton />
       {episodesData && episodesData.results ? (
         <>
           <EpisodesList episodes={episodesData} />

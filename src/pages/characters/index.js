@@ -2,7 +2,9 @@ import React, { useEffect, useState} from 'react';
 import CharactersList from "../../components/characters-list";
 import Filter from "../../components/filter";
 import NoResults from "../../components/no-results";
+import GoBackButton from "../../components/goBackButton";
 import { Pagination } from "@mui/material";
+
 import './characters.scss';
 
 function Characters() {
@@ -58,6 +60,7 @@ function Characters() {
 
   return (
     <div className="characters">
+      <GoBackButton />
       <Filter handleFilters={handleFilters} clearAllFilters={clearAllFilters}/>
       {characterData && characterData.results ? (
         <>

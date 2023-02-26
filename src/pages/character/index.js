@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { useParams, Link } from 'react-router-dom';
+import GoBackButton from "../../components/goBackButton";
 import  CharacterEpisodes from "../../components/character-episode";
 import './character.scss';
 
@@ -17,6 +18,7 @@ function Character() {
 
   return (
     <div className="character">
+      <GoBackButton />
       {singleCharacterData && 
         <div className="character-data"> 
           {console.log(singleCharacterData)}
