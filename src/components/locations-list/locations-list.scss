@@ -1,0 +1,39 @@
+.locations-component{
+  a {
+    text-decoration: none;
+  }
+
+  .location{
+    border: none;
+    background-color: rgba(100, 100, 100, 0.7);
+    box-shadow: 0px 0px 15px 10px rgba(0, 0, 0, 0.2);
+    border-radius: 15px;
+    overflow: hidden;
+    margin-bottom: 30px;
+    text-align: center;
+
+    .name-tag{
+      vertical-align: middle;
+      padding: 15px 20px 10px 20px;
+      font-size: 20px;
+      font-weight: bold;
+      color: #EEE;
+      letter-spacing: -0.5px;
+      height: 85px;
+    }
+
+    .information{
+      padding: 0px 20px 20px 20px;
+      color: #EEE;
+      height: 92px;
+      p{
+        font-size: 16px;
+        margin-bottom: 0px;
+      }
+    }
+  }
+  .location-col{
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+}

@@ -2,7 +2,9 @@ import React from "react";
 import Header from './components/header';
 import Home from "./pages/home";
 import Characters from "./pages/characters";
+import Character from "./pages/character";
 import Locations from "./pages/locations";
+import Location from "./pages/location";
 import Episodes from "./pages/episodes";
 import '../node_modules/bootstrap/dist/css/bootstrap.css';
 import './App.scss';
@@ -18,7 +20,9 @@ export default function App() {
           <Routes>
             <Route path="/" element={<Home />}></Route>
             <Route path="/characters" element={<Characters />}></Route>
+            <Route path="/character/:id" element={<Character />}></Route>
             <Route path="/locations" element={<Locations />}></Route>
+            <Route path="/location/:id" element={<Location />}></Route>
             <Route path="/episodes" element={<Episodes />}></Route>
           </Routes>
         </Router>

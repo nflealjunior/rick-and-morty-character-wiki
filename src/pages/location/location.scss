@@ -1,0 +1,45 @@
+.location{
+
+  .location-data{
+    padding: 30px;
+    background-color: rgba(100, 100, 100, 0.7);
+    background-size: contain;
+    border-radius: 15px;
+    width: 100%;
+
+    a{
+      text-decoration: none;
+      color: #EEE;
+    }
+
+    .location-information{
+      padding-bottom: 30px;
+
+      .location-name{
+        color: #EEE;
+        font-size: 35px;
+        padding-bottom: 0px;
+      }
+
+      p {
+        color: #EEE;
+        margin-bottom: 0px;
+        font-size: 20px;
+      }
+    }
+
+    .location-character-section-title{
+      color: #EEE;
+      font-size: 30px;
+      padding-bottom: 15px;
+    }
+  }
+
+  .character-data-row{
+    padding-bottom: 15px;
+  }
+
+  .location-characters-section{
+    border-radius: 10px;
+  }
+}

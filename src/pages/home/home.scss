@@ -1,4 +1,72 @@
 .home{
-  font-size: 30px;
-  color: #EEE;
+  a{
+    text-decoration: none;
+  }
+
+  .options-col{
+    padding-left: 15px;
+    padding-right: 15px;
+
+    .list-option{
+      border: none;
+      background-color: rgba(100, 100, 100, 0.7);
+      box-shadow: 0px 0px 15px 10px rgba(0, 0, 0, 0.2);
+      border-radius: 15px;
+      overflow: hidden;
+      margin-bottom: 30px;
+      text-align: center;
+  
+      .description-tag{
+        vertical-align: middle;
+        padding: 20px 30px;
+        font-size: 25px;
+        font-weight: bold;
+        color: #EEE;
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        letter-spacing: -0.5px;
+      }
+  
+      .image{
+        position: relative;
+        .list-option-img{
+          background-repeat: no-repeat;
+          background-size: contain;
+          background-image: url("../../assets/images/character-placeholder.jpg");
+  
+          @media screen and (max-width: 575px) {
+            width: 100%;
+          }
+  
+          @media screen and (min-width: 576px) and (max-width: 767px) {
+            width: 150px;
+            height: 150px;
+          }
+  
+          @media screen and (min-width: 768px) and (max-width: 1199px) {
+            width: 210px;
+            height: 210px;
+          }
+  
+          @media screen and (min-width: 1200px) and (max-width: 1399px) {
+            width: 255px;
+            height: 255px;
+          }
+  
+          @media screen and (min-width: 1400px) {
+            width: 416px;
+            height: 416px;
+          }
+        }
+      }
+  
+      .information{
+        font-size: 20px;
+        padding-top: 10px;
+        padding-bottom: 20px;
+        color: #EEE;
+      }
+    }
+  }
 }

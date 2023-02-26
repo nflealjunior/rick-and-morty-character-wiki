@@ -63,13 +63,13 @@ function Characters() {
         <>
           <CharactersList characters={characterData} />
           <Pagination 
-            className="container pagination" 
+            className="pagination" 
             count={characterData.info.pages} 
             size="large"
             color="primary"
             hidePrevButton 
             hideNextButton
-            siblingCount={2} 
+            siblingCount={1} 
             boundaryCount={1}
             page={currentPage}
             onChange={handlePage}
