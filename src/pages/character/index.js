@@ -21,13 +21,13 @@ function Character() {
         <div className="character-data"> 
           {console.log(singleCharacterData)}
           <div className="character-data-row row">
-            <div className={"character-image-col " + "character-" + singleCharacterData.status.toLowerCase() + " col-lg-3"}>
+            <div className={"character-image-col " + "character-" + singleCharacterData.status.toLowerCase() + " col-md-3 col-lg-3"}>
               <div className="character-status-tag">
                 {singleCharacterData.status.toUpperCase()}
               </div>
               <img className="character-image" alt="character" src={singleCharacterData.image} />
             </div>
-            <div className=" character-information col-lg-9">
+            <div className=" character-information col-md-9 col-lg-9">
               <p className="character-name">{singleCharacterData.name}</p>
               <p>Specie: {singleCharacterData.species}</p>
               <p>Gender: {singleCharacterData.gender}</p>
@@ -59,7 +59,7 @@ function Character() {
               {singleCharacterData.episode && singleCharacterData.episode.map(function (episode) {
                 const episodeNumber = episode.split("/")[5];
                 return (
-                  <div key={"episode-" + episodeNumber} className="col-lg-4">
+                  <div key={"episode-" + episodeNumber} className="col-md-6 col-lg-4">
                     <CharacterEpisodes episode={episodeNumber} />
                   </div>
                 )

@@ -23,6 +23,18 @@
       white-space: nowrap;
       overflow: hidden;
       text-overflow: ellipsis;
+
+      @media screen and (min-width: 576px) and (max-width: 991px) {
+        font-size: 16px;
+      }
+
+      @media screen and (min-width: 992px) and (max-width: 1199px) {
+        font-size: 17px;
+      }
+
+      @media screen and (min-width: 1200px) and (max-width: 1399px) {
+        font-size: 18px;
+      }
     }
 
     .information{
@@ -36,6 +48,10 @@
         white-space: nowrap;
         overflow: hidden;
         text-overflow: ellipsis;
+
+        @media screen and (min-width: 576px) and (max-width: 1199px) {
+          font-size: 14px;
+        }
       }
     }
 
@@ -45,6 +61,10 @@
       text-decoration: underline;
       text-underline-position: under;
       font-size: 12px;
+
+      @media screen and (min-width: 576px) and (max-width: 1199px) {
+        font-size: 10px;
+      }
     }
   }
   .location-col{

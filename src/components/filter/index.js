@@ -32,12 +32,12 @@ function Filter(props) {
         <div className="filter-item col-lg-2">
           <label className="filter-label">Name</label>
           <br />
-          <input placeholder="Type a name..." className="filter-input" type="text" name="character-name" id="character-name"></input>
+          <input placeholder="Type a name" className="filter-input" type="text" name="character-name" id="character-name"></input>
         </div>
         <div className="filter-item col-lg-2">
           <label className="filter-label">Species</label>
           <br />
-          <input placeholder="Type the specie..." className="filter-input" type="text" name="character-species" id="character-species"></input>
+          <input placeholder="Type the specie" className="filter-input" type="text" name="character-species" id="character-species"></input>
         </div>
         <div className="filter-item col-lg-2">
           <label className="filter-label">Status</label>

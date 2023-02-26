@@ -8,7 +8,7 @@ function LocationsList(props) {
       <div className="locations-row row">
         {props.locations && props.locations.results.map(function (location) {
           return (
-            <Link to={`/location/${location.id}`} key={location.id} className="location-col col-xs-6 col-sm-4 col-lg-3">
+            <Link to={`/location/${location.id}`} key={location.id} className="location-col col-xs-6 col-sm-6 col-md-4 col-lg-3">
               <div className="location">
                 <div className="name-tag">
                   {location.name.toUpperCase()}

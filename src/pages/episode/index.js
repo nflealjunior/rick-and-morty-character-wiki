@@ -28,11 +28,11 @@ function Episode() {
           </div>
           <div className="episode-characters-section row">
               <div className="episode-character-section-title">
-                Characters in {singleEpisodeData.episode + " " + singleEpisodeData.name}:</div>
+                Characters in '{singleEpisodeData.episode + " " + singleEpisodeData.name}':</div>
               {singleEpisodeData.characters && singleEpisodeData.characters.map(function (character) {
                 const characterId = character.split("/")[5];
                 return (
-                  <div key={"character-" + characterId} className="col-lg-3">
+                  <div key={"character-" + characterId} className="col-xs-12 col-sm-6 col-md-4 col-lg-3">
                     <LocationCharacters id={characterId} />
                   </div>
                 )

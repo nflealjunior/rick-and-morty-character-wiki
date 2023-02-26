@@ -10,7 +10,7 @@ function Home() {
   return (
     <div className="home">
       <div className="row">
-        <Link className="options-col col-lg-4" to={'/characters'}>
+        <Link className="options-col col-md-4 col-lg-4" to={'/characters'}>
           <div className="list-option">
             <div className="description-tag">
               CHARACTERS
@@ -23,7 +23,7 @@ function Home() {
             </div>
           </div>
         </Link>
-        <Link className="options-col col-lg-4" to={'/locations'}>
+        <Link className="options-col col-md-4 col-lg-4" to={'/locations'}>
           <div className="list-option">
             <div className="description-tag">
               LOCATIONS
@@ -36,7 +36,7 @@ function Home() {
             </div>
           </div>
         </Link>
-        <Link className="options-col col-lg-4" to={'/episodes'}>
+        <Link className="options-col col-md-4 col-lg-4" to={'/episodes'}>
           <div className="list-option">
             <div className="description-tag">
               EPISODES

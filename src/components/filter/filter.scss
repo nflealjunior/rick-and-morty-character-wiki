@@ -21,6 +21,14 @@
         background-color: rgba(100, 100, 100, 0.7);
         color: #EEE;
         border-radius: 10px;
+
+        @media screen and (min-width: 992px) and (max-width: 1199px) {
+          font-size: 11px;
+        }
+
+        @media screen and (min-width: 1200px) and (max-width: 1399px) {
+          font-size: 14px;
+        }
       } 
 
       .filter-input::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
@@ -39,6 +47,14 @@
         option{
           background-color: #444;
         }
+
+        @media screen and (min-width: 992px) and (max-width: 1199px) {
+          font-size: 11px;
+        }
+
+        @media screen and (min-width: 1200px) and (max-width: 1399px) {
+          font-size: 14px;
+        }
       } 
 
       .filter-button{
@@ -49,6 +65,14 @@
         color: #EEE;
         border-radius: 10px;
         margin-top: 29px;
+
+        @media screen and (min-width: 992px) and (max-width: 1199px) {
+          font-size: 12px;
+        }
+
+        @media screen and (min-width: 1200px) and (max-width: 1399px) {
+          font-size: 14px;
+        }
       }
 
       .clear-button{
@@ -59,6 +83,14 @@
         color: #EEE;
         border-radius: 10px;
         margin-top: 29px;
+
+        @media screen and (min-width: 992px) and (max-width: 1199px) {
+          font-size: 12px;
+        }
+
+        @media screen and (min-width: 1200px) and (max-width: 1399px) {
+          font-size: 14px;
+        }
       }
     }
   }

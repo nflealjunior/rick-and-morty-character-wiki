@@ -8,7 +8,7 @@ function EpisodesList(props) {
       <div className="episodes-row row">
         {props.episodes && props.episodes.results.map(function (episode) {
           return (
-            <Link to={`/episode/${episode.id}`} key={episode.id} className="episode-col col-xs-6 col-sm-4 col-lg-3">
+            <Link to={`/episode/${episode.id}`} key={episode.id} className="episode-col col-xs-12 col-sm-12 col-md-6 col-lg-3">
               <div className="episode">
                 <div className="name-tag">
                   {episode.episode.toUpperCase() + ": " + episode.name.toUpperCase()}

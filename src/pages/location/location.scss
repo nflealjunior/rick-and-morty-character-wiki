@@ -20,6 +20,10 @@
         color: #EEE;
         font-size: 35px;
         padding-bottom: 0px;
+
+        @media screen and (max-width: 767px) {
+          font-size: 25px;
+        }
       }
 
       p {
@@ -27,6 +31,10 @@
         margin-bottom: 0px;
         padding-bottom: 5px;
         font-size: 18px;
+
+        @media screen and (max-width: 767px) {
+          font-size: 14px;
+        }
       }
     }
 
@@ -34,6 +42,10 @@
       color: #EEE;
       font-size: 18px;
       padding-bottom: 15px;
+
+      @media screen and (max-width: 767px) {
+        font-size: 14px;
+      }
     }
   }
 

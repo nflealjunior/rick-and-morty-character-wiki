@@ -1,7 +1,7 @@
 .episode{
 
   .episode-data{
-    padding: 30px;
+    padding: 20px 30px 20px 30px;
     margin-bottom: 15px;
     background-color: rgba(100, 100, 100, 0.7);
     background-size: contain;
@@ -14,18 +14,54 @@
     }
 
     .episode-information{
+      width: 100%;
       padding-bottom: 0px;
 
       .episode-name{
         color: #EEE;
         font-size: 35px;
-        padding-bottom: 0px;
+        line-height: 40px;
+        padding-bottom: 10px;
+
+        @media screen and (max-width: 575px) {
+          font-size: 20px;
+          line-height: 25px;
+        }
+
+        @media screen and (min-width: 576px) and (max-width: 767px) {
+          font-size: 25px;
+          line-height: 30px;
+        }
+
+        @media screen and (min-width: 768px) and (max-width: 991px) {
+          font-size: 28px;
+        }
+
+        @media screen and (min-width: 992px) and (max-width: 1199px) {
+          font-size: 30px;
+        }
       }
 
       p {
         color: #EEE;
         margin-bottom: 0px;
         font-size: 18px;
+
+        @media screen and (max-width: 575px) {
+          font-size: 14px
+        }
+
+        @media screen and (min-width: 576px) and (max-width: 767px) {
+          font-size: 16px;
+        }
+        
+        @media screen and (min-width: 768px) and (max-width: 991px) {
+          font-size: 16px;
+        }
+
+        @media screen and (min-width: 992px) and (max-width: 1199px) {
+          font-size: 17px;
+        }
       }
     }
 
@@ -33,6 +69,22 @@
       color: #EEE;
       font-size: 18px;
       padding-bottom: 15px;
+
+      @media screen and (max-width: 575px) {
+        font-size: 14px
+      }
+
+      @media screen and (min-width: 576px) and (max-width: 767px) {
+        font-size: 16px;
+      }
+
+      @media screen and (min-width: 768px) and (max-width: 991px) {
+        font-size: 16px;
+      }
+
+      @media screen and (min-width: 992px) and (max-width: 1199px) {
+        font-size: 17px;
+      }
     }
   }
 

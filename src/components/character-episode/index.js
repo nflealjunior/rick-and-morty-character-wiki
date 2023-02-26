@@ -22,7 +22,7 @@ function CharacterEpisodes(props) {
             {characterEpisodeData.episode + ": " + characterEpisodeData.name}
           </div>
           <div className="more-info">
-            Click to see more information &#8599;
+            Complete information &#8599;
           </div>
           <div className="character-episode-air-date">
             {characterEpisodeData.air_date}

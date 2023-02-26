@@ -28,11 +28,11 @@ function Location() {
             </div>
           </div>
           <div className="location-characters-section row">
-              <div className="location-character-section-title">Residents of {singleLocationData.name}:</div>
+              <div className="location-character-section-title">Residents of '{singleLocationData.name}':</div>
               {singleLocationData.residents && singleLocationData.residents.map(function (resident) {
                 const residentId = resident.split("/")[5];
                 return (
-                  <div key={"resident-" + residentId} className="col-lg-3">
+                  <div key={"resident-" + residentId} className="col-xs-12 col-sm-6 col-md-4 col-lg-3">
                     <LocationCharacters id={residentId} />
                   </div>
                 )

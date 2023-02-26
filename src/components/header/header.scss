@@ -6,6 +6,10 @@
 
   .logo{
     width: 500px;
+
+    @media screen and (max-width: 599px) {
+      width: 100%;
+    }
   }
 
   .title{
@@ -13,5 +17,15 @@
     font-size: 25px;
     text-align: center;
     color: #EEE;
+
+    @media screen and (min-width: 200px) and (max-width: 299px) {
+      margin-top: 10px;
+      font-size: 20px;
+    }
+
+    @media screen and (min-width: 300px) and (max-width: 399px) {
+      margin-top: 0px;
+      font-size: 20px;
+    }
   }
 }
