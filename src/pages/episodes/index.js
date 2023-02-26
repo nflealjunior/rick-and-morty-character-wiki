@@ -10,7 +10,6 @@ function Episodes() {
   const [currentPage, setCurrentPage] = useState(1);
 
   function handleEpisodesPage (e) {
-    console.log(Number.parseInt(e.target.innerHTML.split('<')[0]));
     setCurrentPage(Number.parseInt(e.target.innerHTML.split('<')[0]));
   }
 
@@ -28,7 +27,6 @@ function Episodes() {
       {episodesData && episodesData.results ? (
         <>
           <EpisodesList episodes={episodesData} />
-          {episodesData && console.log(episodesData.info.pages)}
           <Pagination 
             className="pagination" 
             count={episodesData.info.pages} 

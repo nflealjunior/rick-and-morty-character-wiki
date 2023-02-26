@@ -21,7 +21,6 @@ function Episode() {
       <GoBackButton />
       {singleEpisodeData && 
         <div className="episode-data"> 
-          {console.log(singleEpisodeData)}
           <div className="episode-data-row row">
             <div className="episode-information col-lg-9">
               <p className="episode-name">{singleEpisodeData.episode + ": " + singleEpisodeData.name}</p>

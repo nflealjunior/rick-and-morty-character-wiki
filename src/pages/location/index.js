@@ -21,7 +21,6 @@ function Location() {
       <GoBackButton />
       {singleLocationData && 
         <div className="location-data"> 
-          {console.log(singleLocationData)}
           <div className="location-data-row row">
             <div className="location-information col-lg-9">
               <p className="location-name">{singleLocationData.name}</p>

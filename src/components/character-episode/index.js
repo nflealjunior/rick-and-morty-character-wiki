@@ -9,10 +9,9 @@ function CharacterEpisodes(props) {
     fetch("https://rickandmortyapi.com/api/episode/" + props.episode).then((response) => {
       response.json().then((episodeData) => {
         setCharacterEpisodeData(episodeData);
-        console.log(episodeData);
       });
     });
-  }, []);
+  }, [props.episode]);
 
   return (
     characterEpisodeData && (

@@ -10,9 +10,9 @@ function Footer() {
         <div className="col-lg-10">
           <p>
             The information contained in this website is for general information purposes only. 
-            The information is provided by <a href="https://rickandmortyapi.com/" target="_blank">
+            The information is provided by <a href="https://rickandmortyapi.com/" target="_blank" rel="noreferrer">
             The Rick and Morty API</a>, owned by <a href="https://www.adultswim.com/" 
-            target="_blank">[adult swim]</a> and while we endeavour to keep the information up to date and 
+            target="_blank" rel="noreferrer">[adult swim]</a> and while we endeavour to keep the information up to date and 
             correct, we make no representations or warranties of any kind, express or implied, about 
             the completeness, accuracy, reliability, suitability or availability with respect to the 
             website or the information, products, services, or related graphics contained on the 
@@ -29,8 +29,8 @@ function Footer() {
           </p>
         </div>
         <div className="col-lg-2">
-          <a href="https://www.adultswim.com/" target="_blank">
-            <img className="adult-swim-logo" src={AdultSwimLogo} />
+          <a href="https://www.adultswim.com/" target="_blank" rel="noreferrer">
+            <img alt="adult-swim-logo" className="adult-swim-logo" src={AdultSwimLogo} />
           </a>
         </div>
       </div>

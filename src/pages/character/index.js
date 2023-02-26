@@ -21,9 +21,8 @@ function Character() {
       <GoBackButton />
       {singleCharacterData && 
         <div className="character-data"> 
-          {console.log(singleCharacterData)}
           <div className="character-data-row row">
-            <div className={"character-image-col " + "character-" + singleCharacterData.status.toLowerCase() + " col-md-3 col-lg-3"}>
+            <div className={"character-image-col character-" + singleCharacterData.status.toLowerCase() + " col-md-3 col-lg-3"}>
               <div className="character-status-tag">
                 {singleCharacterData.status.toUpperCase()}
               </div>
@@ -38,7 +37,6 @@ function Character() {
                   Type: {singleCharacterData.type}
                 </p>
               }
-              {console.log(Number.parseInt(singleCharacterData.origin.url.split('/')[5]))}
               {(singleCharacterData.origin.name !== "unknown") && 
                 <Link to={`/location/${Number.parseInt(singleCharacterData.origin.url.split('/')[5])}`}>
                   <p className="location-link">
@@ -46,7 +44,6 @@ function Character() {
                   </p>
                 </Link>
               }
-              {console.log(Number.parseInt(singleCharacterData.origin.url.split('/')[5]))}
               {(singleCharacterData.location.name !== "unknown") && 
                 <Link to={`/location/${Number.parseInt(singleCharacterData.location.url.split('/')[5])}`}>
                   <p className="location-link">
@@ -57,7 +54,7 @@ function Character() {
             </div>
           </div>
           <div className="character-episodes-section row">
-              <div className="episodes-section-title">Episodes {singleCharacterData.name} appeared:</div>
+              <div className="episodes-section-title">Episodes '{singleCharacterData.name}' appeared:</div>
               {singleCharacterData.episode && singleCharacterData.episode.map(function (episode) {
                 const episodeNumber = episode.split("/")[5];
                 return (

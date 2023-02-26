@@ -9,10 +9,9 @@ function LocationCharacters(props) {
     fetch("https://rickandmortyapi.com/api/character/" + props.id).then((response) => {
       response.json().then((residentData) => {
         setLocationCharacterData(residentData);
-        console.log(residentData);
       });
     });
-  }, []);
+  }, [props.id]);
 
   return (
     locationCharacterData && (
@@ -21,7 +20,6 @@ function LocationCharacters(props) {
         to={`/character/${locationCharacterData.id}`} 
         key={locationCharacterData.id} 
       >
-        {console.log(locationCharacterData)}
         <div key={locationCharacterData.id} className="resident">
           <div className={"location-resident-image resident-" + locationCharacterData.status.toLowerCase()}>
             <div className="resident-status-tag">{locationCharacterData.status.toUpperCase()}</div>
