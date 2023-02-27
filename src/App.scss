@@ -1,5 +1,5 @@
 .character-wiki{
-  height: 100%;
+  height: 100vh;
   background-image: linear-gradient(
       rgba(30, 30, 30, 0.7),
       rgba(30, 30, 30, 0.7)
@@ -10,6 +10,10 @@
   -o-background-size: cover;
   background-size: cover;
   overflow-y: overlay;
+
+  body{
+    height: 100vh;
+  }
 }
 
 .rick-and-morty-character-wiki{
