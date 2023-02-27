@@ -18,7 +18,7 @@ function Character() {
         setSingleCharacterData(data);
       });
     });
-  }, [character.id]);
+  }, [character.id, navigate]);
 
   return (
     <div className="character">

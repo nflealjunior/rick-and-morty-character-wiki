@@ -15,7 +15,7 @@ function PageNotFound() {
           Page not found
         </div>
         <div className="image">
-          <img src=""/>
+          <img alt="not-found" src=""/>
         </div>
         <div className="go-back-button">
           <button onClick={() => navigate(-1)}>&#8592; Take me back!</button>

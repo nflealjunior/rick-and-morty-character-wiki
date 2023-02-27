@@ -18,7 +18,7 @@ function Episode() {
         setSingleEpisodeData(data);
       });
     });
-  }, [episode.id]);
+  }, [episode.id, navigate]);
 
   return (
     <div className="episode">

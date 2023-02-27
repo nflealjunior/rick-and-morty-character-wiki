@@ -11,7 +11,7 @@ import Episode from "./pages/episode";
 import PageNotFound from "./pages/not-found";
 import '../node_modules/bootstrap/dist/css/bootstrap.css';
 import './App.scss';
-import { BrowserRouter as Router, Routes, Route, NotFound } from 'react-router-dom';
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 
 export default function App() {
 
