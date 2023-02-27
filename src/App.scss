@@ -3,6 +3,11 @@
   min-height: 100vh;
   min-height: -webkit-fill-available;
   overflow-y: overlay;
+  background-image: linear-gradient(
+      rgba(30, 30, 30, 0.65),
+      rgba(30, 30, 30, 0.65)
+    ), url("assets/images/stars-background.jpg");
+  background-size: auto;
 
   body{
     min-height: 100vh;
@@ -14,14 +19,10 @@
 .rick-and-morty-character-wiki{
   font-family: monospace;
   background-image: linear-gradient(
-      rgba(30, 30, 30, 0.7),
-      rgba(30, 30, 30, 0.7)
+      rgba(30, 30, 30, 0.65),
+      rgba(30, 30, 30, 0.65)
     ), url("assets/images/stars-background.jpg");
-  background-attachment: fixed;
-  -moz-background-size: cover;
-  -webkit-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover;
+  background-size: auto;
 
   .content{
     padding-top: 20px;

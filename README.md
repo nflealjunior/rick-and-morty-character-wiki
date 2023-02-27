@@ -1,2 +1,3 @@
 # rick-and-morty-character-wiki
-Rick and Morty: Character Wiki
+
+<a href="https://rick-and-morty-character-wiki.vercel.app/" target="_blank">Rick and Morty: Character Wiki</a>
