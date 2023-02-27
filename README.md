@@ -1,3 +1,5 @@
-# rick-and-morty-character-wiki
+# Rick and Morty: Character Wiki
 
-<a href="https://rick-and-morty-character-wiki.vercel.app/" target="_blank">Rick and Morty: Character Wiki</a>
+[https://rick-and-morty-character-wiki.vercel.app/](https://rick-and-morty-character-wiki.vercel.app/)
+
+![alt text](https://i.imgur.com/onJsG7c.png)
