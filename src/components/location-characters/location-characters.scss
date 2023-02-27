@@ -16,8 +16,8 @@
         background-image: url("../../assets/images/character-placeholder.jpg");
         background-repeat: no-repeat;
         background-size: contain;
-        width: 261px;
-        height: 261px;
+        width: 252px;
+        height: 252px;
 
         @media screen and (max-width: 575px) {
           width: 100%;
@@ -25,23 +25,23 @@
         }
 
         @media screen and (min-width: 576px) and (max-width: 767px) {
-          width: 186px;
-          height: 186px;
+          width: 168px;
+          height: 168px;
         }
 
         @media screen and (min-width: 768px) and (max-width: 991px) {
-          width: 166px;
-          height: 166px;
+          width: 154px;
+          height: 154px;
         }
 
         @media screen and (min-width: 992px) and (max-width: 1199px) {
-          width: 171px;
-          height: 171px;
+          width: 162px;
+          height: 162px;
         }
 
         @media screen and (min-width: 1200px) and (max-width: 1399px) {
-          width: 216px;
-          height: 216px;
+          width: 207px;
+          height: 207px;
         }
       }
 
@@ -119,11 +119,11 @@
       }
       
       @media screen and (min-width: 576px) and (max-width: 767px) {
-        font-size: 10px;
+        font-size: 9px;
       }
 
       @media screen and (min-width: 768px) and (max-width: 1199px) {
-        font-size: 9px;
+        font-size: 8px;
       }
 
       @media screen and (min-width: 1200px) and (max-width: 1399px) {

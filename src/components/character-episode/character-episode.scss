@@ -15,6 +15,10 @@
       white-space: nowrap;
       overflow: hidden;
       text-overflow: ellipsis;
+
+      @media screen and (max-width: 399px) {
+        font-size: 15px;
+      }
     }
     
     .more-info{
@@ -24,6 +28,8 @@
       font-size: 11px;
       bottom: 10px;
       left: 15px;
+
+      
 
       @media screen and (max-width: 1199px) {
         font-size: 10px;
@@ -35,6 +41,11 @@
       position: absolute;
       bottom: 10px;
       right: 15px;
+
+      @media screen and (max-width: 399px) {
+        left: 15px;
+        bottom: 28px;
+      }
 
       @media screen and (max-width: 1199px) {
         font-size: 12px;

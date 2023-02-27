@@ -9,6 +9,10 @@
     border-radius: 15px;
     width: 100%;
 
+    @media screen and (max-width: 399px) {
+      padding: 15px 15px 5px 15px;
+    }
+
     a{
       text-underline-position: under;
       color: #EEE;
