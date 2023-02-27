@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import { useParams } from 'react-router-dom';
+import { useParams, useNavigate } from 'react-router-dom';
 import  LocationCharacters from "../../components/location-characters";
 import GoBackButton from "../../components/goBackButton";
 import './location.scss';
@@ -7,10 +7,14 @@ import './location.scss';
 function Location() {
   const location = useParams();
   const [singleLocationData, setSingleLocationData] = useState(null);
+  const navigate = useNavigate();
 
   useEffect(() => {
     fetch("https://rickandmortyapi.com/api/location/" + location.id).then((response) => {
       response.json().then((data) => {
+        if (!response.ok) {
+          navigate("/locations");
+        }
         setSingleLocationData(data);
       });
     });

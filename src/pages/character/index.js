@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import { useParams, Link } from 'react-router-dom';
+import { useParams, Link, useNavigate } from 'react-router-dom';
 import GoBackButton from "../../components/goBackButton";
 import  CharacterEpisodes from "../../components/character-episode";
 import './character.scss';
@@ -7,10 +7,14 @@ import './character.scss';
 function Character() {
   const character = useParams();
   const [singleCharacterData, setSingleCharacterData] = useState(null);
+  const navigate = useNavigate();
 
   useEffect(() => {
     fetch("https://rickandmortyapi.com/api/character/" + character.id).then((response) => {
       response.json().then((data) => {
+        if (!response.ok) {
+          navigate("/characters");
+        }
         setSingleCharacterData(data);
       });
     });
