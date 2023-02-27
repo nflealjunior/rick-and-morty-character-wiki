@@ -12,6 +12,10 @@
       background-color: rgba(100, 100, 100, 0.7);
       padding: 5px 12px 10px 12px;
       border-radius: 30px;
+
+      @media screen and (max-width: 349px){
+        padding: 3px 6px 5px 6px;
+      }
     }
 
     .Mui-selected{
@@ -23,6 +27,39 @@
 
     .MuiPaginationItem-root{
       color: #EEE;
+
+      // @media screen and (max-width: 359px){
+      //   height: 22px;
+      //   min-width: 22px;
+      //   font-size: 11px;
+      // }
+
+      @media screen and (max-width: 349px){
+        height: 25px;
+        width: 25px;
+        min-width: 20px;
+        font-size: 11px;
+      }
+
+      @media screen and (min-width: 350px) and (max-width: 379px){
+        height: 30px;
+        min-width: 30px;
+      }
+
+      @media screen and (min-width: 380px) and (max-width: 409px) {
+        height: 35px;
+        min-width: 35px;
+      }
+    }
+
+    .MuiPaginationItem-ellipsis{
+      @media screen and (min-width: 350px) and (max-width: 379px){
+        padding-top: 10px;
+      }
+
+      @media screen and (min-width: 380px) and (max-width: 409px) {
+        padding-top: 10px;
+      }
     }
   }
 }

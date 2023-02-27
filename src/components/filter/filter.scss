@@ -12,6 +12,10 @@
         color: #EEE;
         font-size: 15px;
         padding-bottom: 5px;
+
+        @media screen and (max-width: 991px) {
+          padding-bottom: 0px;
+        }
       }
   
       .filter-input{
@@ -24,10 +28,12 @@
 
         @media screen and (min-width: 992px) and (max-width: 1199px) {
           font-size: 11px;
+          padding: 10px 15px;
         }
 
         @media screen and (min-width: 1200px) and (max-width: 1399px) {
           font-size: 14px;
+          padding: 10px 15px;
         }
       } 
 
@@ -43,6 +49,7 @@
         background-color: rgba(100, 100, 100, 0.7);
         color: #EEE;
         border-radius: 10px;
+        border-right: 10px solid transparent;
 
         option{
           background-color: #444;
@@ -50,10 +57,12 @@
 
         @media screen and (min-width: 992px) and (max-width: 1199px) {
           font-size: 11px;
+          padding: 10px 15px;
         }
 
         @media screen and (min-width: 1200px) and (max-width: 1399px) {
           font-size: 14px;
+          padding: 10px 15px;
         }
       } 
 
@@ -91,6 +100,10 @@
         @media screen and (min-width: 1200px) and (max-width: 1399px) {
           font-size: 14px;
         }
+      }
+
+      @media screen and (max-width: 991px) {
+        padding-bottom: 10px;
       }
     }
   }
