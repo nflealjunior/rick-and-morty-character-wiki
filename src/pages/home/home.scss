@@ -1,5 +1,5 @@
 .home{
-  padding-top: 25px;
+  padding-top: 20px;
   a{
     text-decoration: none;
   }
@@ -27,6 +27,10 @@
         overflow: hidden;
         text-overflow: ellipsis;
         letter-spacing: -0.5px;
+
+        @media screen and (min-width: 768px) and (max-width: 991px) {
+          font-size: 20px;
+        }
       }
   
       .image{
@@ -35,7 +39,6 @@
           background-repeat: no-repeat;
           background-size: contain;
           background-image: url("../../assets/images/character-placeholder.jpg");
-          width: 100%;
   
           @media screen and (max-width: 575px) {
             width: 100%;
@@ -45,24 +48,24 @@
             width: 100%;
           }
 
-          @media screen and (min-width: 768px) and (max-width: 991) {
-            width: 210px;
-            height: 210px;
+          @media screen and (min-width: 768px) and (max-width: 991px) {
+            width: 198px;
+            height: 198px;
           }
   
-          @media screen and (min-width: 992) and (max-width: 1199px) {
-            width: 290px;
-            height: 290px;
+          @media screen and (min-width: 992px) and (max-width: 1199px) {
+            width: 277.98px;
+            height: 277.98px;
           }
   
           @media screen and (min-width: 1200px) and (max-width: 1399px) {
-            width: 350px;
-            height: 350px;
+            width: 323px;
+            height: 323px;
           }
   
           @media screen and (min-width: 1400px) {
-            width: 416px;
-            height: 416px;
+            width: 383px;
+            height: 383px;
           }
         }
       }
@@ -74,14 +77,35 @@
         color: #EEE;
         text-decoration: underline;
         text-underline-position: under;
+
+        @media screen and (min-width: 768px) and (max-width: 991px) {
+          font-size: 12px;
+        }
+
+        @media screen and (min-width: 992px) and (max-width: 1199px) {
+          font-size: 14px;
+        }
       }
     }
   }
-}
 
-.rick-and-morty-character-wiki{
-  .content{
-    padding-top: 0px!important;
-    padding-bottom: 0px!important;
+  .characters-option{
+    @media screen and (min-width: 1200px) {
+      padding-right: 30px;
+    }
+  }
+
+  .locations-option{
+    
+    @media screen and (min-width: 1200px) {
+      padding-left: 22.5px;
+      padding-right: 22.5px;
+    }
+  }
+
+  .episodes-option{
+    @media screen and (min-width: 1200px) {
+      padding-left: 30px;
+    }
   }
 }
