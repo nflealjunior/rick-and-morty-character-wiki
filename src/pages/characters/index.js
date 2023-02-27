@@ -80,7 +80,7 @@ function Characters() {
         </>
       ) : (
         <>
-          <NoResults clearAllFilters={clearAllFilters}/>
+          <NoResults clearAllFilters={clearAllFilters} showBackButton={true}/>
           <Pagination 
             className="container pagination" 
             count={1} 

@@ -42,7 +42,7 @@ function Episodes() {
         </>
       ) : (
         <>
-          <NoResults />
+          <NoResults showBackButton={false} />
           <Pagination 
             className="container pagination" 
             count={1} 
