@@ -4,6 +4,15 @@
   min-height: -webkit-fill-available;
   overflow-y: overlay;
 
+  body{
+    min-height: 100vh;
+    min-height: -webkit-fill-available;
+    margin: 0;
+  }
+}
+
+.rick-and-morty-character-wiki{
+  font-family: monospace;
   background-image: linear-gradient(
       rgba(30, 30, 30, 0.7),
       rgba(30, 30, 30, 0.7)
@@ -13,17 +22,6 @@
   -webkit-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
-
-  body{
-    min-height: 100vh;
-    min-height: -webkit-fill-available;
-    margin: 0;
-    background-size: auto;
-  }
-}
-
-.rick-and-morty-character-wiki{
-  font-family: monospace;
 
   .content{
     padding-top: 20px;
