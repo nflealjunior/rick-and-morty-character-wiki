@@ -31,7 +31,12 @@ function Episode() {
               <p>Air date: {singleEpisodeData.air_date}</p>
             </div>
           </div>
-          <div className="episode-characters-section row">
+          {singleEpisodeData && singleEpisodeData.characters && singleEpisodeData.characters.length === 0 ? (
+            <div className="episode-characters-section row">
+              <div className="episode-character-section-title">There are no results for characters in '{singleEpisodeData.name}'</div>
+            </div>
+          ) : (
+            <div className="episode-characters-section row">
               <div className="episode-character-section-title">
                 Characters in '{singleEpisodeData.episode + " " + singleEpisodeData.name}':</div>
               {singleEpisodeData.characters && singleEpisodeData.characters.map(function (character) {
@@ -42,7 +47,8 @@ function Episode() {
                   </div>
                 )
               })}
-          </div>
+            </div>
+          )}
         </div>
       }
     </div>

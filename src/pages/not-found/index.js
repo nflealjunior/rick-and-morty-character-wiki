@@ -1,5 +1,6 @@
 import React from 'react';
 import { useNavigate } from 'react-router-dom';
+import notFoundLogo from '../../assets/images/no-results-morty.png';
 import './not-found.scss';
 
 function PageNotFound() {
@@ -14,8 +15,8 @@ function PageNotFound() {
         <div className="page-not-found">
           Page not found
         </div>
-        <div className="image">
-          <img alt="not-found" src=""/>
+        <div className="not-found-image">
+          <img className="img" alt="not-found" src={notFoundLogo}/>
         </div>
         <div className="go-back-button">
           <button onClick={() => navigate(-1)}>&#8592; Take me back!</button>
